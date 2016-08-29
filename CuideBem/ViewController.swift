@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import QuartzCore
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var botaoCuidador: UIButton!
+    @IBOutlet weak var botaoResponsavel: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        botaoCuidador.layer.borderWidth = 1;
+        botaoCuidador.layer.borderColor = UIColor.darkGrayColor().CGColor;
+        
+        botaoResponsavel.layer.borderWidth = 1;
+        botaoResponsavel.layer.borderColor = UIColor.darkGrayColor().CGColor;
     }
 
     override func didReceiveMemoryWarning() {

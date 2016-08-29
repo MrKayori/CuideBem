@@ -14,6 +14,7 @@
 		63F67D141CE77B9700B0A415 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63F67D121CE77B9700B0A415 /* LaunchScreen.storyboard */; };
 		63F67D1F1CE77B9700B0A415 /* CuideBemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F67D1E1CE77B9700B0A415 /* CuideBemTests.swift */; };
 		63F67D2A1CE77B9700B0A415 /* CuideBemUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F67D291CE77B9700B0A415 /* CuideBemUITests.swift */; };
+		63F67D381CE91EB500B0A415 /* LoginCuidadorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F67D371CE91EB500B0A415 /* LoginCuidadorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		63F67D251CE77B9700B0A415 /* CuideBemUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CuideBemUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F67D291CE77B9700B0A415 /* CuideBemUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CuideBemUITests.swift; sourceTree = "<group>"; };
 		63F67D2B1CE77B9700B0A415 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63F67D371CE91EB500B0A415 /* LoginCuidadorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginCuidadorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				63F67D101CE77B9700B0A415 /* Assets.xcassets */,
 				63F67D121CE77B9700B0A415 /* LaunchScreen.storyboard */,
 				63F67D151CE77B9700B0A415 /* Info.plist */,
+				63F67D371CE91EB500B0A415 /* LoginCuidadorViewController.swift */,
 			);
 			path = CuideBem;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 				TargetAttributes = {
 					63F67D051CE77B9700B0A415 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = KW5823LNL4;
 					};
 					63F67D191CE77B9700B0A415 = {
 						CreatedOnToolsVersion = 7.3;
@@ -257,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				63F67D0C1CE77B9700B0A415 /* ViewController.swift in Sources */,
+				63F67D381CE91EB500B0A415 /* LoginCuidadorViewController.swift in Sources */,
 				63F67D0A1CE77B9700B0A415 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -399,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CuideBem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.cuidebem.CuideBem;
@@ -410,6 +416,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CuideBem/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = br.com.cuidebem.CuideBem;
@@ -482,6 +489,7 @@
 				63F67D301CE77B9700B0A415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63F67D311CE77B9700B0A415 /* Build configuration list for PBXNativeTarget "CuideBemTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +498,7 @@
 				63F67D331CE77B9700B0A415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		63F67D341CE77B9700B0A415 /* Build configuration list for PBXNativeTarget "CuideBemUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +507,7 @@
 				63F67D361CE77B9700B0A415 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
