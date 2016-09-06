@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maW-32-QQs">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="maW-32-QQs">
                                 <rect key="frame" x="33" y="336" width="247" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="PuX-GM-15A"/>
@@ -43,7 +43,7 @@
                                     <segue destination="yDO-Dy-JBw" kind="show" id="nLt-Ax-qAu"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIp-iy-GA3">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIp-iy-GA3">
                                 <rect key="frame" x="33" y="417" width="247" height="46"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="48" id="GTV-yd-URn"/>
@@ -65,7 +65,7 @@
                                     </mask>
                                 </variation>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="gospaces-logo" translatesAutoresizingMaskIntoConstraints="NO" id="TNZ-Ov-mgm">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="gospaces-logo" translatesAutoresizingMaskIntoConstraints="NO" id="TNZ-Ov-mgm">
                                 <rect key="frame" x="36" y="146" width="240" height="128"/>
                             </imageView>
                         </subviews>
