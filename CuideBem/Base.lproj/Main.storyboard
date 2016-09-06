@@ -168,7 +168,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t5a-HZ-7Rj">
                                 <rect key="frame" x="9" y="93" width="303" height="118"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Login Cuidador">
+                                    <fragment content="Log-in Cuidador">
                                         <attributes>
                                             <color key="NSColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <font key="NSFont" size="36" name="CourierNewPS-BoldMT"/>
