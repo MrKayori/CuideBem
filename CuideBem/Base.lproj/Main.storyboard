@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8jn-Aj-ZMy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10109" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="8jn-Aj-ZMy">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10083"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--01 Início-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CuideBem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="01 Início" id="BYZ-38-t0r" customClass="ViewController" customModule="CuideBem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GxV-Sg-adI"/>
                         <viewControllerLayoutGuide type="bottom" id="54r-S1-Jg4"/>
@@ -138,10 +138,10 @@
             </objects>
             <point key="canvasLocation" x="-2482.5" y="131.99999999999997"/>
         </scene>
-        <!--Login Cuidador View Controller-->
+        <!--02 Login-->
         <scene sceneID="61t-vC-9BA">
             <objects>
-                <viewController id="yDO-Dy-JBw" customClass="LoginCuidadorViewController" customModule="CuideBem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="02 Login" id="yDO-Dy-JBw" customClass="LoginCuidadorViewController" customModule="CuideBem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="drS-Co-eRG"/>
                         <viewControllerLayoutGuide type="bottom" id="QCc-O1-ijl"/>
@@ -237,10 +237,72 @@
             </objects>
             <point key="canvasLocation" x="-840" y="-13.732394366197182"/>
         </scene>
-        <!--Cadastrar Cuidador Controller-->
+        <!--07 Histórico de batimentos-->
+        <scene sceneID="0Kd-Qh-w8j">
+            <objects>
+                <viewController title="07 Histórico de batimentos" id="uuK-d4-4x4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e3F-Yu-e7K"/>
+                        <viewControllerLayoutGuide type="bottom" id="DAL-ve-pOD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KMC-vw-WDB">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aEn-wF-7sj">
+                                <rect key="frame" x="0.0" y="228" width="600" height="59"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WcC-mP-5WP">
+                                <rect key="frame" x="0.0" y="330" width="600" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Histórico por dia" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IX3-ES-nr1">
+                                <rect key="frame" x="14" y="205" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Histórico por mês" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aPD-jM-vuL">
+                                <rect key="frame" x="14" y="306" width="136" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Histórico por ano" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3YV-hx-BBc">
+                                <rect key="frame" x="14" y="413" width="132" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wtr-9R-v04">
+                                <rect key="frame" x="0.0" y="435" width="600" height="66"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="coração" translatesAutoresizingMaskIntoConstraints="NO" id="9x5-Mt-bZ3">
+                                <rect key="frame" x="435" y="118" width="102" height="88"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="relogio" translatesAutoresizingMaskIntoConstraints="NO" id="VxS-Yz-g1d">
+                                <rect key="frame" x="224" y="98" width="128" height="128"/>
+                            </imageView>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BzT-S7-oj0">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
+                                <items>
+                                    <navigationItem title="Histórico de batimentos" id="nHK-qE-e2Q"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QAm-gP-6XB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-725" y="725"/>
+        </scene>
+        <!--03 Cadastro Cuidador-->
         <scene sceneID="EW0-kB-4AO">
             <objects>
-                <viewController id="vb3-dU-jlh" customClass="CadastrarCuidadorController" customModule="CuideBem" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="03 Cadastro Cuidador" id="vb3-dU-jlh" customClass="CadastrarCuidadorController" customModule="CuideBem" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BsS-gj-MvQ"/>
                         <viewControllerLayoutGuide type="bottom" id="TX2-Ab-aOk"/>
@@ -346,25 +408,55 @@
             </objects>
             <point key="canvasLocation" x="-93" y="-391.99999999999994"/>
         </scene>
-        <!--Acompanhamento Responsavel-->
-        <scene sceneID="6Tg-L1-FIk">
+        <!--07 Rotina-->
+        <scene sceneID="SAy-t1-LGL">
             <objects>
-                <viewController title="Acompanhamento Responsavel" id="9ub-7z-IP9" sceneMemberID="viewController">
-                    <button key="view" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="AL8-6x-9k7">
+                <viewController title="07 Rotina" id="7VV-NW-aGa" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NHj-Jn-2xL"/>
+                        <viewControllerLayoutGuide type="bottom" id="1Al-EJ-mNw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="OQI-VO-HFf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <state key="normal" title="Button"/>
-                    </button>
-                    <navigationItem key="navigationItem" title="Title" id="xrd-CD-mXQ"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="d9S-y6-JQK">
+                                <rect key="frame" x="25" y="143" width="240" height="127"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CmR-Jo-9EN">
+                                <rect key="frame" x="200" y="67" width="200" height="51"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Rotinas">
+                                        <attributes>
+                                            <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <font key="NSFont" size="36" name="Courier-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="Alarme" translatesAutoresizingMaskIntoConstraints="NO" id="wdx-Zc-vKu">
+                                <rect key="frame" x="267" y="142" width="128" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3i-Kw-nFS">
+                                <rect key="frame" x="25" y="278" width="240" height="30"/>
+                                <fontDescription key="fontDescription" name="Courier" family="Courier" pointSize="15"/>
+                                <state key="normal" title="+ Adicionar nova rotina"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3rD-dK-Qb1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udC-nd-IHS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-358.5" y="985"/>
+            <point key="canvasLocation" x="-1471" y="1623"/>
         </scene>
-        <!--Emergência-->
+        <!--09 Emergência-->
         <scene sceneID="wqF-lg-eA2">
             <objects>
-                <viewController title="Emergência" id="xTa-LP-GLc" sceneMemberID="viewController">
+                <viewController title="09 Emergência" id="xTa-LP-GLc" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="o2I-fy-Ob4"/>
                         <viewControllerLayoutGuide type="bottom" id="ti1-yu-ExU"/>
@@ -422,12 +514,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gSo-5I-MD9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-358.5" y="1631"/>
+            <point key="canvasLocation" x="-683" y="1731"/>
         </scene>
-        <!--Ajustes-->
+        <!--08 Ajustes-->
         <scene sceneID="G3o-Uo-xl6">
             <objects>
-                <viewController title="Ajustes" id="4Ox-xS-RFn" sceneMemberID="viewController">
+                <viewController title="08 Ajustes" id="4Ox-xS-RFn" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="SCZ-Ng-rVl"/>
                         <viewControllerLayoutGuide type="bottom" id="Eat-B2-gF3"/>
@@ -475,12 +567,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="55o-QC-cbE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="1631"/>
+            <point key="canvasLocation" x="71" y="1843"/>
         </scene>
-        <!--Dashboard Paciente-->
+        <!--04 Dashboard Paciente-->
         <scene sceneID="ApU-IS-qbv">
             <objects>
-                <viewController title="Dashboard Paciente" id="Exs-iv-GW5" sceneMemberID="viewController">
+                <viewController title="04 Dashboard Paciente" id="Exs-iv-GW5" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lkp-u5-YGP"/>
                         <viewControllerLayoutGuide type="bottom" id="FYl-uV-Rca"/>
@@ -533,12 +625,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWu-Lh-Zk3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3" y="985"/>
+            <point key="canvasLocation" x="151" y="1061"/>
         </scene>
-        <!--Cadastro Paciente-->
+        <!--05 Cadastro Paciente-->
         <scene sceneID="0C3-D0-5M8">
             <objects>
-                <viewController title="Cadastro Paciente" id="yCO-X7-rpj" sceneMemberID="viewController">
+                <viewController title="05 Cadastro Paciente" id="yCO-X7-rpj" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8Ji-Rm-ELR"/>
                         <viewControllerLayoutGuide type="bottom" id="zZh-Lk-d7V"/>
@@ -703,12 +795,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RtF-cu-oNC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="366" y="985"/>
+            <point key="canvasLocation" x="862" y="309"/>
         </scene>
-        <!--Dashboard Cardiaco-->
+        <!--06 Dashboard Cardiaco-->
         <scene sceneID="agv-h9-Vo7">
             <objects>
-                <viewController title="Dashboard Cardiaco" id="wXt-Ih-BKl" sceneMemberID="viewController">
+                <viewController title="06 Dashboard Cardiaco" id="wXt-Ih-BKl" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="KZH-5J-710"/>
                         <viewControllerLayoutGuide type="bottom" id="pR5-mZ-0x6"/>
@@ -800,10 +892,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UHb-tp-aLK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="721.5" y="985"/>
+            <point key="canvasLocation" x="937" y="1049"/>
         </scene>
     </scenes>
     <resources>
+        <image name="Alarme" width="128" height="128"/>
+        <image name="coração" width="128" height="128"/>
         <image name="gospaces-logo" width="682" height="300"/>
+        <image name="relogio" width="128" height="128"/>
     </resources>
 </document>
